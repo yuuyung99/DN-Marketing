@@ -1,0 +1,614 @@
+﻿/*====================================
+TABLET
+====================================*/
+
+@media (max-width: 992px) {
+
+    .hero-content {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .hero h1 {
+        font-size: 58px;
+    }
+
+        .hero h1 span {
+            font-size: 28px;
+        }
+
+    .hero-stats {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+/*====================================
+MOBILE
+====================================*/
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+
+    .header {
+        padding: 10px 0;
+    }
+
+        .header .container {
+            justify-content: center;
+        }
+
+        .header .btn-primary {
+            display: none;
+        }
+
+    .logo img {
+        height: 42px;
+    }
+
+
+
+    /* HERO */
+
+    .hero {
+        min-height: auto;
+        padding: 120px 0 60px;
+        background-position: 70% center;
+    }
+
+    .hero-overlay {
+        background: linear-gradient( 180deg, rgba(11,19,32,.90) 0%, rgba(11,19,32,.70) 25%, rgba(11,19,32,.35) 50%, transparent 75% );
+    }
+
+    .hero-content {
+        width: 100%;
+        text-align: center;
+    }
+
+
+
+    /* BADGE */
+
+    .hero-badge {
+        font-size: 11px;
+        padding: 10px 15px;
+        margin-bottom: 20px;
+    }
+
+
+
+    /* TITLE */
+
+    .hero h1 {
+        font-size: 38px;
+        line-height: 1.15;
+        margin-bottom: 20px;
+    }
+
+        .hero h1 span {
+            font-size: 24px;
+            margin-top: 12px;
+        }
+
+
+
+    /* TEXT */
+
+    .hero p {
+        font-size: 16px;
+        line-height: 1.8;
+        margin-bottom: 30px;
+    }
+
+
+
+    /* BUTTONS */
+
+    .hero-buttons {
+        justify-content: center;
+        gap: 12px;
+        margin-bottom: 40px;
+    }
+
+        .hero-buttons .btn-primary,
+        .hero-buttons .btn-secondary {
+            width: 100%;
+            max-width: 280px;
+        }
+
+
+
+    /* STATS */
+
+    .hero-stats {
+        grid-template-columns: repeat(2,1fr);
+        gap: 12px;
+    }
+
+    .stat-item {
+        padding: 18px;
+    }
+
+        .stat-item strong {
+            font-size: 24px;
+        }
+}
+
+@media (max-width:768px) {
+
+    .hero {
+        background: url('images/hero-mobile.png') center center/cover no-repeat;
+    }
+}
+@media (max-width:768px) {
+
+    .popup-content {
+        padding: 30px 20px;
+    }
+
+    .popup-header h3 {
+        font-size: 28px;
+    }
+}
+
+@media(max-width:992px) {
+
+    .pain-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:768px) {
+
+    .solution-section {
+        min-height: auto;
+    }
+
+    .solution-image {
+        position: relative;
+        width: 100%;
+        height: 300px;
+    }
+
+        .solution-image::after {
+            display: none;
+        }
+
+    .solution-content {
+        width: 100%;
+        padding: 30px 0 50px;
+    }
+
+        .solution-content h2 {
+            font-size: 25px;
+        }
+}
+@media(max-width:768px) {
+
+    .pain-section {
+        padding: 50px 0;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+
+    .pain-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-tag {
+        font-size: 11px;
+    }
+}
+@media(max-width:768px) {
+
+    .roadmap-section {
+        padding: 0px 0;
+    }
+
+        .roadmap-section .section-title {
+            font-size: 25px;
+            margin-bottom: 25px;
+        }
+
+    .roadmap-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-top: 30px;
+    }
+
+    .roadmap-line {
+        display: none;
+    }
+    .roadmap-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .roadmap-number {
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+        font-size: 20px;
+        margin: 0;
+    }
+        .roadmap-number::before {
+            inset: -6px;
+        }
+    .roadmap-card {
+        flex: 1;
+        padding: 15px;
+        text-align: left;
+        min-height: auto;
+    }
+    .roadmap-badge {
+        margin-bottom: 10px;
+    }
+    .roadmap-card h3 {
+        font-size: 18px;
+        margin-bottom: 3px;
+    }
+    .roadmap-card p {
+        font-size: 14px;
+        line-height: 1.5;
+        max-width: none;
+        margin: 0;
+    }
+
+}
+@media(max-width:768px) {
+
+    .roadmap-wrapper {
+        position: relative;
+    }
+
+        .roadmap-wrapper::before {
+            content: '';
+            position: absolute;
+            left: 25px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: repeating-linear-gradient( to bottom, rgba(214,137,16,.7) 0px, rgba(214,137,16,.7) 10px, transparent 10px, transparent 18px );
+        }
+}
+@media(max-width:768px) {
+
+    .benefit-grid {
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+    }
+
+    .benefit-card {
+        padding: 20px 12px;
+    }
+
+        .benefit-card img {
+            width: 55px;
+            height: 55px;
+        }
+
+        .benefit-card p {
+            font-size: 13px;
+        }
+}
+@media(max-width:768px) {
+
+    .mentor-featured {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .mentor-content li {
+        text-align: left;
+    }
+
+    .mentor-grid {
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+    }
+
+    .mentor-content h3 {
+        font-size: 25px;
+    }
+}
+
+@media(max-width:768px) {
+
+    .result-stats {
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+        margin: 30px 0;
+    }
+
+    .stat-item {
+        padding: 20px 15px;
+    }
+
+        .stat-item span {
+            font-size: 36px;
+        }
+
+        .stat-item p {
+            font-size: 13px;
+        }
+
+    .success-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .success-card img {
+        height: 260px;
+    }
+
+    .success-card blockquote {
+        font-size: 15px;
+    }
+}
+/* ====================================
+RESPONSIVE OFFER SECTION
+==================================== */
+
+@media(max-width:992px) {
+
+    .offer-wrapper {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .offer-countdown {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:768px) {
+
+    .offer-section {
+        padding: 30px 0;
+    }
+
+    .offer-grid {
+        grid-template-columns: repeat(2,1fr);
+        gap: 12px;
+    }
+
+    .offer-item {
+        padding: 20px 12px;
+        border-radius: 15px;
+    }
+
+        .offer-item img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+
+        .offer-item h3 {
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
+
+        .offer-item p {
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+    .offer-discount span {
+        font-size: 38px;
+    }
+
+    .offer-countdown {
+        padding: 25px 15px;
+        border-radius: 18px;
+    }
+
+    .countdown-label {
+        font-size: 11px;
+        margin-bottom: 20px;
+    }
+
+    .countdown-time {
+        gap: 8px;
+        margin-bottom: 20px;
+    }
+
+        .countdown-time div {
+            min-height: 75px;
+            border-radius: 12px;
+        }
+
+        .countdown-time span {
+            font-size: 26px;
+            margin-bottom: 5px;
+        }
+
+        .countdown-time small {
+            font-size: 9px;
+        }
+
+        .countdown-time div:not(:last-child)::after {
+            right: -7px;
+            top: 18px;
+            font-size: 18px;
+        }
+
+    .offer-countdown .btn-primary {
+        height: 48px;
+        font-size: 14px;
+        padding: 0 15px;
+    }
+    .offer-left .section-title{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:480px) {
+
+    .offer-grid {
+        gap: 10px;
+    }
+
+    .offer-item {
+        padding: 15px 10px;
+    }
+
+        .offer-item img {
+            width: 35px;
+            height: 35px;
+        }
+
+        .offer-item h3 {
+            font-size: 13px;
+        }
+
+        .offer-item p {
+            font-size: 11px;
+        }
+
+    .offer-discount span {
+        font-size: 34px;
+    }
+
+    .countdown-time span {
+        font-size: 22px;
+    }
+
+    .countdown-time div {
+        min-height: 68px;
+    }
+}
+/* ====================================
+RESPONSIVE
+==================================== */
+
+@media(max-width:768px) {
+
+    .faq-wrapper {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .faq-question {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .faq-answer p {
+        padding: 0 15px 15px;
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .faq-question i {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+}
+
+@media(max-width:768px) {
+
+    .final-cta {
+        padding: 50px 0;
+    }
+
+    .final-form-box {
+        padding: 25px 20px;
+        border-radius: 20px;
+    }
+
+    .final-desc {
+        font-size: 14px;
+        margin: 10px 0 20px;
+    }
+
+    .input-group input {
+        height: 52px;
+        font-size: 16px;
+    }
+
+    .footer-submit {
+        height: 52px;
+        font-size: 14px;
+    }
+
+    .benefit-item {
+        padding: 15px;
+    }
+
+    .benefit-highlight {
+        padding: 20px;
+    }
+
+        .benefit-highlight span {
+            font-size: 15px;
+        }
+}
+@media(max-width:992px) {
+
+    .final-cta-wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+/* ====================================
+RESPONSIVE
+==================================== */
+
+@media(max-width:768px) {
+
+    .site-footer {
+        padding: 25px 0 18px;
+    }
+
+    .footer-main {
+        flex-direction: column;
+        text-align: center;
+        gap: 18px;
+        padding-bottom: 18px;
+    }
+
+    .footer-contact {
+        gap: 18px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 6px;
+        text-align: center;
+        line-height: 1.5;
+    }
+}
+
+@media(max-width:768px) {
+
+    input,
+    select,
+    textarea,
+    button {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
